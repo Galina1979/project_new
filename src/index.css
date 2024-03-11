@@ -7,7 +7,48 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav{
+  padding: 0 50px;  
+}
+footer{
+  padding: 0 1rem;   /* или 20hx */
+}
+.content{
+  min-height: calc(100vh - 64px - 70px);
+  padding: 30px;
+}
+.movies{
+display: grid;
+grid-template-columns: repeat(auto-fill,minmax(250px, 1fr));
+gap: 20px;
+padding: 30px 150px;
+}
+.search{
+  display: grid;
+  grid-template-columns: 6fr 1fr;
+  grid-column-gap: 2%;
+  margin: 0 2%;
+}
+.search a{
+  align-self: center;
+  height: 100%;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.radio_Movies{
+  padding: 20px;
+  display: flex;
+  gap: 2%;
+  justify-content: center;
 }
